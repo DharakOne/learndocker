@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Esto es un comentario-->
+
+    {% include "barra.html" %}
+
+    Hola <span class="name">{{tu_nombre}} </span> desde la plantilla
+
+    {% if False %}
+    <p>Welcome to the weekend!</p>
+    {% else %}
+    <p>Get back to work.</p>
+    {% endif %}
+
+    <ul>
+        {% for athlete in athlete_list %}
+        <li>{{ athlete }}</li>
+        {% endfor %} 
+    </ul>
+
+    {% ifequal section 'sitenews' %}
+    <h1>Site News</h1>
+    {% else %}
+    <h1>No News Here</h1>
+    {% endifequal %}
+</body>
+
+</html>
