@@ -1,3 +1,3 @@
 FROM gitpod/workspace-postgres
 
-From dpage/pgadmin4
+FROM dpage/pgadmin4
