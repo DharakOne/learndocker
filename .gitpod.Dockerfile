@@ -3,7 +3,7 @@ FROM gitpod/workspace-postgres
 #
 # Setup the repository
 #
-
+sudo apt install curl
 # Install the public key for the repository (if not done previously):
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
 
